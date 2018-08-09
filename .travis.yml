@@ -1,4 +1,4 @@
 language: bash
 
 script:
-    - bash <(curl -s -L https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/wss_agent.sh) -apiKey 63fbe101e3a045e592b9af5f5cef3ef98d6f0814534144f88221ed6b2fc82f7e -c C:\\ScanTests\\whitesource-fs-agent.config -d C:\\ScanTests\\ScanUTF
+    - bash <(curl -s -L https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/wss_agent.sh) -apiKey 63fbe101e3a045e592b9af5f5cef3ef98d6f0814534144f88221ed6b2fc82f7e -c C:\\ScanTests\\whitesource-fs-agent.config -d C:\\ScanTests\\ScanUTF -project TravisTest
