@@ -4,7 +4,7 @@ script:
     # - bash <(curl -s -L https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/wss_agent.sh) -apiKey 63fbe101e3a045e592b9af5f5cef3ef98d6f0814534144f88221ed6b2fc82f7e -c whitesource-fs-agent.config -d ~/ -project TravisTest
     - curl -LJO https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/whitesource-fs-agent.jar
     - curl -LJO https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/whitesource-fs-agent.config
-    - cat whitesource-fs-agent.config
+    #- cat whitesource-fs-agent.config
     #- echo >> whitesource-fs-agent.config
     #- echo "checkPolicies=ture" >>  whitesource-fs-agent.config
     #- cat whitesource-fs-agent.config
@@ -17,5 +17,5 @@ script:
     - echo "*************************************************************************************"
     - cat whitesource-fs-agent.config
     - echo "*************************************************************************************"
-    - java -jar whitesource-fs-agent.jar -apiKey 63fbe101e3a045e592b9af5f5cef3ef98d6f0814534144f88221ed6b2fc82f7e -c whitesource-fs-agent.config -d ~/ -project TravisTest
+    #- java -jar whitesource-fs-agent.jar -apiKey 63fbe101e3a045e592b9af5f5cef3ef98d6f0814534144f88221ed6b2fc82f7e -c whitesource-fs-agent.config -d ~/ -project TravisTest
     
