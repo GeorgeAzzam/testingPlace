@@ -10,7 +10,7 @@ script:
     #- cat whitesource-fs-agent.config
     #Create temporary file with new line in place
     #- cp whitesource-fs-agent.config temp_file.config
-    - cat whitesource-fs-agent.config | sed -e "s/checkPolicies=false/checkPolicies=true/; s/forceUpdate=false/forceUpdate=true/" > temp_file.config
+    - cat whitesource-fs-agent.config | sed -e "s/checkPolicies=false/checkPolicies=true/; s/forceCheckAllDependencies=false/forceCheckAllDependencies=true/" > temp_file.config
     #- cat temp_file.config | sed -e "s/forceCheckAllDependencies=false/forceCheckAllDependencies=true/" > temp_file.config
     #Copy the new file over the original file
     - mv temp_file.config whitesource-fs-agent.config
