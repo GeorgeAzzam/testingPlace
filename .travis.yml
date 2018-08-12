@@ -13,7 +13,7 @@ script:
     - cat whitesource-fs-agent.config | sed -e "s/checkPolicies=false/checkPolicies=true/; s/forceUpdate=false/forceUpdate=true/" > temp_file.config
     #- cat temp_file.config | sed -e "s/forceUpdate=false/forceUpdate=true/" > temp_file.config
     #Copy the new file over the original file
-    #- mv temp_file.config whitesource-fs-agent.config
+    - mv temp_file.config whitesource-fs-agent.config
     - echo "*************************************************************************************"
     - cat whitesource-fs-agent.config
     - echo "*************************************************************************************"
