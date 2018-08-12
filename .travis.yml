@@ -17,5 +17,5 @@ script:
     - echo "*************************************************************************************"
     - cat whitesource-fs-agent.config
     - echo "*************************************************************************************"
-    #- java -jar whitesource-fs-agent.jar -apiKey 63fbe101e3a045e592b9af5f5cef3ef98d6f0814534144f88221ed6b2fc82f7e -c whitesource-fs-agent.config -d ~/ -project TravisTest
+    - java -jar whitesource-fs-agent.jar -apiKey 63fbe101e3a045e592b9af5f5cef3ef98d6f0814534144f88221ed6b2fc82f7e -c whitesource-fs-agent.config -d ~/ -project TravisTest
     
